@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  list-style-type: none;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+.container.flex_centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+form > input {
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 1px solid indigo;
+  &:focus {
+    outline: none;
+  }
+}
+form > button {
+  padding: 5px 10px;
+  background-color: indigo;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+/* task list  */
+.task_Lists {
+  border-radius: 20px;
+  overflow: hidden;
+
+  width: 100%;
+}
+.task_Lists > .task_Box {
+  background-color: #dddef5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  padding-block: 20px;
+  margin-bottom: 10px;
+}
+.task_Box > .delete_Btn > button {
+  padding-inline: 20px;
+  padding-block: 10px;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 20px;
+  color: red;
+  cursor: pointer;
+}
+.task_Box:last-child {
+  margin-bottom: 0;
+}
